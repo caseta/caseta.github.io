@@ -18,7 +18,7 @@
     {% include head-custom.html %}
   </head>
   <body>
-      <div id="header">
+<!--       <div id="header">
         <nav>
           <ul>
             {% if site.show_downloads %}
@@ -28,13 +28,12 @@
             {% endif %}
           </ul>
         </nav>
-      </div><!-- end header -->
+      </div> -->
 
     <div class="wrapper">
-
       <section>
         <div id="title">
-          <h2>{{ site.title | default: site.github.repository_name }}</h2>
+          <h2 style="text-align:center">{{ site.title | default: site.github.repository_name }}</h2>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
         </div>
 
@@ -45,7 +44,6 @@
           <span class="credits right">theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
         </div>
       </section>
-
     </div>
   </body>
 </html>
